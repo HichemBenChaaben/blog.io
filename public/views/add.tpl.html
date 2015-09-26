@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <form novalidate ng-submit="vm.addArticle()">
+        <div class="form-group">
+            <label for="aname">Name</label>
+            <input name="aname"
+                   ng-model="article.name"
+                   placeholder="Article name"
+                   type="text"
+                   class="form-control"
+                   requrired="required"/>
+            <label for="content">Content</label>
+            <textarea name="acontent"
+                      ng-model="article.content"
+                      class="form-control"
+                      rows="3"
+                      required="required"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Add article</button>
+    </form>
+</div>

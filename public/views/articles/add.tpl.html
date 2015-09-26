@@ -1,0 +1,31 @@
+
+<bl-alerts message="vm.message"
+           duration="vm.duration"
+           alert="alert"
+           type="vm.alertType">
+</bl-alerts>
+
+<div class="container-fluid">
+    <form name="addfrm" novalidate ng-submit="vm.addArticle(content)">
+        <div class="form-group">
+            <label for="aname">Name</label>
+            <input name="aname"
+                   ng-model="content.name"
+                   placeholder="Article name"
+                   type="text"
+                   ng-minlength="3"
+                   class="form-control"
+                   requrired/>
+            <label for="content">Content</label>
+            <textarea name="acontent"
+                      ng-minlength="3"
+                      ng-model="content.body"
+                      class="form-control"
+                      rows="3"
+                      required></textarea>
+        </div>
+        <button type="submit"
+                ng-disabled="!addfrm.$valid"
+                class="btn btn-success">Add article</button>
+    </form>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <ul class="list-group" ng-init="vm.list();">
+        <a class="list-group-item"
+            ng-repeat="item in vm.articlesList track by $index"
+            ng-click="vm.viewArticle(item._id)">
+            {{item.title}}
+            <div class="col-ms-4 pull-right">
+                <button type="button" class="btn btn-sm btn-default">Edit</button>
+                <button type="button" class="btn btn-sm btn-default">Delete</button>
+            </div>
+        </a>
+    </ul>
+</div>

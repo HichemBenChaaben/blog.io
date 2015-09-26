@@ -1,0 +1,24 @@
+{
+  "name": "blog.io",
+  "version": "0.0.0",
+  "authors": [
+    "HichemBenChaaben <napsterisamm@hotmail.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./public/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "ui-router": "~0.2.15",
+    "angularjs": "~1.4.6",
+    "font-awesome": "~4.4.0",
+    "angular-mocks": "~1.4.6"
+  }
+}

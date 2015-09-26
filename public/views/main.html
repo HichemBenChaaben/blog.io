@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2>Articles</h2>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12" ng-init="vm.getArticles()">
+        <div ng-repeat="item in vm.articleList track by $index">
+            <div ng-if="item._id">
+                <h2>{{item.title}}</h2>
+            </div>
+            <div ng-if="item.date">
+                <strong>{{item.date | date:mm-dd-yy}}</strong>
+            </div>
+            <div ng-if="item.body">
+                {{item.body}}
+            </div>
+            <a ng-href="articles/id:{{item._id}}">Read More</a>
+        </div>
+    </div>
+</div>
