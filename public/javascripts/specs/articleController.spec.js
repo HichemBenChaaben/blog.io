@@ -15,11 +15,6 @@ describe('app', function() {
         })
     });
 
-    // afterEach(function() {
-    //     httpBackend.verifyNoOutstandingExpectation();
-    //     httpBackend.verifyNoOutstandingRequest();
-    // });
-
     it('should have a defined controller', function() {
         expect(ctrl).toBeDefined();
     });
